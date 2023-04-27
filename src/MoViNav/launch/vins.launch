@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="vins" type="vins_node" name="vins" args="/root/catkin_ws/src/VINS-Fusion/config/xtdrone_sitl/px4_sitl_mono_imu_config.yaml"/>
+</launch>
