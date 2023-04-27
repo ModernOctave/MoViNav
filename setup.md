@@ -22,6 +22,12 @@ The original image can be found [here](https://www.yuque.com/xtdrone/manual_en/d
 docker run --runtime=nvidia --name MoViNav -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY -e XAUTHORITY -e NVIDIA_DRIVER_CAPABILITIES=all xtdrone:1.4
 ```
 
+## Clone repository
+```	
+git clone https://github.com/ModernOctave/MoViNav.git ~/MoViNav
+cd ~/MoViNav
+```
+
 ## Install Ceres Solver
 ```
 ./install-ceres.sh
@@ -50,7 +56,7 @@ sed -i 's/iris_stereo_camera/iris_realsense_camera/g' ~/PX4_Firmware/launch/indo
 ./install-ego-planner.sh
 ```
 
-## Install Monodepth & Octomap
+## Install MoViNav
 ```
-./install-mono-octo.sh
+./install-movinav.sh
 ```
