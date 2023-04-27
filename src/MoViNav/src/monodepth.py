@@ -34,7 +34,7 @@ class MonoDepth():
         self.min_depth = rospy.get_param("~min_depth", 10)
         self.max_depth = rospy.get_param("~max_depth", 1000)
         self.batch_size = rospy.get_param("~batch_size", 1)
-        self.model_file = rospy.get_param("~model_file", "/models/depth_3.pth")
+        self.model_file = rospy.get_param("~model_file", "/models/densedepth.pth")
 
     # predictions = model.predict(image, batch_size=batch_size)
         # Read keras model
