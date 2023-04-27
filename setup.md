@@ -19,7 +19,7 @@ The original image can be found [here](https://www.yuque.com/xtdrone/manual_en/d
 
 ## Create Container
 ```
-docker run --runtime=nvidia --name XTDrone -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY -e XAUTHORITY -e NVIDIA_DRIVER_CAPABILITIES=all xtdrone:1.4
+docker run --runtime=nvidia --name MoViNav -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY -e XAUTHORITY -e NVIDIA_DRIVER_CAPABILITIES=all xtdrone:1.4
 ```
 
 ## Install Ceres Solver
@@ -48,4 +48,9 @@ sed -i 's/iris_stereo_camera/iris_realsense_camera/g' ~/PX4_Firmware/launch/indo
 ## Install ego_planner
 ```
 ./install-ego-planner.sh
+```
+
+## Install Monodepth & Octomap
+```
+./install-mono-octo.sh
 ```
