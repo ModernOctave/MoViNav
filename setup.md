@@ -60,3 +60,10 @@ sed -i 's/iris_stereo_camera/iris_realsense_camera/g' ~/PX4_Firmware/launch/indo
 ```
 ./install-movinav.sh
 ```
+
+## Download Pretrained Model
+```
+pip3 install gdown
+mkdir -p ~/catkin_ws/src/MoViNav/models
+gdown -O ~/catkin_ws/src/MoViNav/models/ 1XZ8w92x6OxToo0W-GdBzX_ZkaP9sUJ_H
+```
