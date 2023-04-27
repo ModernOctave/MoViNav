@@ -51,11 +51,6 @@ Change the camera from `iris_stereo_camera` to `iris_realsense_camera` so that g
 sed -i 's/iris_stereo_camera/iris_realsense_camera/g' ~/PX4_Firmware/launch/indoor1-depth.launch
 ```
 
-## Install ego_planner
-```
-./install-ego-planner.sh
-```
-
 ## Install MoViNav
 ```
 ./install-movinav.sh
@@ -66,4 +61,9 @@ sed -i 's/iris_stereo_camera/iris_realsense_camera/g' ~/PX4_Firmware/launch/indo
 pip3 install gdown
 mkdir -p ~/catkin_ws/src/MoViNav/models
 gdown -O ~/catkin_ws/src/MoViNav/models/ 1XZ8w92x6OxToo0W-GdBzX_ZkaP9sUJ_H
+```
+
+## Install ego_planner
+```
+./install-ego-planner.sh
 ```
