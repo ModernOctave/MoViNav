@@ -3,4 +3,5 @@
     <node pkg="movinav" type="monodepth.py" name="monodepth" output="screen" respawn="true">
         <param name="topic_color" value="/iris_0/stereo_camera/left/image_raw"/>
     </node>
+    <node type="rviz" name="rviz" pkg="rviz" args="-d $(find movinav)/config.rviz"/>
 </launch>
