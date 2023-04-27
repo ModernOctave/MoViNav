@@ -1,0 +1,4 @@
+<launch>
+    <include file="$(find monodepth)/launch/monodepth.launch" />
+    <include file="$(find octo_vins)/launch/octomap_vins.launch" />
+</launch>

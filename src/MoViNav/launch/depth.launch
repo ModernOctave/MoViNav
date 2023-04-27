@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="tf2_ros" type="static_transform_publisher" name="base_link_to_camera_tf" args="0 0 0 0.5 -0.5 0.5 0.5 camera_link camera_depth" />
+    <node pkg="movinav" type="monodepth.py" name="monodepth" output="screen" respawn="true">
+        <param name="topic_color" value="/iris_0/stereo_camera/left/image_raw"/>
+    </node>
+</launch>
