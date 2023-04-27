@@ -15,7 +15,7 @@ bash ~/catkin_ws/scripts/xtdrone_run_vio.sh
 
 To start MoViNav,
 ```
-roslaunch monodepth vins_octo_mono.launch
+roslaunch monodepth depth.launch
 ```
 
 To start MoViNav with octomap,
